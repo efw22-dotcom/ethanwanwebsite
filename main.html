@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Alex Morgan | Portfolio</title>
+    <title>Ethan Wan | Portfolio</title>
 
     <style>
         * {
@@ -63,7 +63,7 @@
         }
 
         .hero-content {
-            max-width: 750px;
+            max-width: 800px;
         }
 
         .hero h1 {
@@ -105,6 +105,8 @@
             color: #182848;
         }
 
+        /* SKILLS */
+
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -121,172 +123,69 @@
             box-shadow: 0 3px 8px rgba(0,0,0,0.05);
         }
 
-        .projects {
+        /* NOTABLE RESEARCH */
+
+        .research {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
         }
 
-        .project {
+        .research-card {
             background: white;
-            padding: 25px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-top: 5px solid #182848;
         }
 
-        .project h3 {
+        .research-card h3 {
             color: #182848;
-            margin-bottom: 12px;
+            font-size: 23px;
+            margin-bottom: 8px;
         }
 
-        .project p {
+        .research-card .type {
+            color: #777;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .research-card p {
             color: #555;
             margin-bottom: 18px;
         }
 
-        .project a {
-            color: #315aa8;
-            font-weight: bold;
-            text-decoration: none;
+        .research-card ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #555;
         }
 
-        .project a:hover {
-            text-decoration: underline;
+        .research-card li {
+            margin-bottom: 7px;
         }
 
-        footer {
-            text-align: center;
+        .research-button {
+            display: inline-block;
             background: #182848;
             color: white;
-            padding: 25px;
-            margin-top: 30px;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 5px;
         }
 
-        @media (max-width: 650px) {
-            header {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            nav a {
-                margin: 0 8px;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-
-            .hero p {
-                font-size: 18px;
-            }
+        .research-button:hover {
+            background: #304a7a;
         }
-    </style>
-</head>
 
-<body>
+        /* FOOTER */
+```
 
-    <header>
-        <h2>Alex Morgan</h2>
-
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-        </nav>
-    </header>
-
-    <main>
-
-        <!-- PERSONAL STATEMENT -->
-        <section class="hero" id="about">
-            <div class="hero-content">
-                <h1>Hello, I'm Alex.</h1>
-
-                <p>
-                    I am a motivated student interested in technology, business,
-                    and problem-solving who enjoys building useful digital projects.
-                </p>
-
-                <a class="button" href="#projects">View My Projects</a>
-            </div>
-        </section>
-
-
-        <!-- SKILLS -->
-        <section id="skills">
-            <h2>Skills</h2>
-
-            <div class="skills">
-                <div class="skill">HTML & CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">Python</div>
-                <div class="skill">Microsoft Office</div>
-                <div class="skill">Problem Solving</div>
-                <div class="skill">Communication</div>
-                <div class="skill">Teamwork</div>
-                <div class="skill">Time Management</div>
-            </div>
-        </section>
-
-
-        <!-- PROJECTS -->
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <div class="projects">
-
-                <div class="project">
-                    <h3>Personal Portfolio Website</h3>
-
-                    <p>
-                        A responsive personal portfolio created with HTML and CSS
-                        to showcase my skills, projects, and professional interests.
-                    </p>
-
-                    <a href="https://github.com/" target="_blank">
-                        View Project →
-                    </a>
-                </div>
-
-
-                <div class="project">
-                    <h3>Business Landing Page</h3>
-
-                    <p>
-                        A sample website designed for a fictional small business,
-                        focusing on clear branding, navigation, and user-friendly
-                        presentation of products and services.
-                    </p>
-
-                    <a href="https://github.com/" target="_blank">
-                        View Project →
-                    </a>
-                </div>
-
-
-                <div class="project">
-                    <h3>Student Data Project</h3>
-
-                    <p>
-                        A small programming project that organizes and analyzes
-                        sample student information using basic programming concepts
-                        and data structures.
-                    </p>
-
-                    <a href="https://github.com/" target="_blank">
-                        View Project →
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-
-    <footer>
-        <p>© 2026 Alex Morgan | Personal Portfolio</p>
-    </footer>
 
 </body>
 </html>
